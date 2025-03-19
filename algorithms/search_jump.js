@@ -18,7 +18,7 @@ function jumpSearch(arr, target) {
   return -1;
 }
 
-console.log("should be 1", jumpSearch([false, true, true, true], 1));
-console.log("should be 3", jumpSearch([false, false, false, true], 3));
+console.log("should be 1", jumpSearch([false, true, true, true], true));
+console.log("should be 3", jumpSearch([false, false, false, true], true));
 console.log("should be 0", jumpSearch([false], false));
 console.log("should be -1", jumpSearch([false], true));
