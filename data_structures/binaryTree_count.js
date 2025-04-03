@@ -66,5 +66,17 @@ function treeDepth(treeNode, target, depth = 0) {
   return Math.max(l, r);
 }
 
+function treeSize(treeNode) {
+  if (!treeNode) {
+    return 0;
+  }
+
+  const l = treeSize(treeNode.left);
+  const r = treeSize(treeNode.right);
+
+  return l + r + 1;
+}
+
 console.log("height is", treeHeight(tree));
 console.log("depth of value 30 is", treeDepth(tree, 30));
+console.log("tree size is", treeSize(tree));
